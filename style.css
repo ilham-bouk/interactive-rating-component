@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  align-items: center;
+}
+p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.6;
+}
+.container {
+  width: 400px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 30px;
+  margin: auto;
+  border-radius: 20px;
+  color: white;
+  display: grid;
+}
+@media (max-width: 570px) {
+  .container {
+    width: 350px;
+  }
+}
+
+.preview .star {
+  width: 45px;
+  height: 45px;
+  background-color: hsl(217deg 12% 63% / 11%);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.preview h1 {
+  margin: 30px 0 0;
+}
+.preview .rating {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.preview .rating span {
+  width: 45px;
+  height: 45px;
+  background-color: hsl(217deg 12% 63% / 11%);
+  color: hsl(217, 12%, 63%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.preview .rating span:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+.preview button {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: hsl(216, 12%, 8%);
+  cursor: pointer;
+}
+.preview .rating span.active,
+.preview button:hover {
+  background-color: white;
+  color: hsl(213, 19%, 18%);
+}
+
+.thank {
+  display: none;
+  text-align: center;
+}
+.thank .show-rating {
+  background-color: hsl(217deg 12% 63% / 11%);
+  font-size: 15px;
+  color: hsl(25, 97%, 53%);
+  padding: 6px 20px;
+  width: fit-content;
+  margin: 25px auto 35px;
+  border-radius: 50px;
+}
